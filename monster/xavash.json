@@ -1,0 +1,138 @@
+{
+	"name": "Xavash",
+	"size": "M",
+	"type": "humanoid",
+	"source": "LumsenLuosWorld",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		14
+	],
+	"hp": {
+		"formula": "7d8 + 90",
+		"average": 121
+	},
+	"speed": {
+		"walk": 25
+	},
+	"str": 10,
+	"dex": 15,
+	"con": 10,
+	"int": 19,
+	"wis": 13,
+	"cha": 10,
+	"passive": 11,
+	"cr": "4",
+	"shortName": true,
+	"skill": {
+		"arcana": "+6",
+		"history": "+6"
+	},
+	"languages": [
+		"Common",
+		"Dwarvish",
+		"tir'su"
+	],
+	"languageTags": [
+		"C",
+		"D"
+	],
+	"action": [
+		{
+			"name": "Ild Rapier",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) fire damage."
+			]
+		},
+		{
+			"name": "Combustion {@recharge 3}",
+			"entries": [
+				"The rune scribe marks the",
+				"Ild Rune with ash on a creature within 5 feet of its",
+				"posion. The creature immediately takes 13 ({@damage 2d10+2}) fire damage."
+			]
+		},
+		{
+			"name": "Ignite",
+			"entries": [
+				"The rune scribe marks the Ild Rune with ash on a",
+				"flammable object. That object immediately bursts into",
+				"flames."
+			]
+		},
+		{
+			"name": "Fire Tamer",
+			"entries": [
+				"The rune scribe traces the Ild Rune with its",
+				"hand over an open flame. The rune scribe can",
+				"manipulate the flame as per the control flames spell."
+			]
+		}
+	],
+	"damageTags": [
+		"F"
+	],
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"The rune scribe is a 2nd-level spellcaster.",
+				"Its spellcasng ability is Intelligence. It can cast the",
+				"following spells."
+			],
+			"spells": {
+				"0": {
+					"spells": [
+						"{@spell control flames|XGE}",
+						"{@spell mending}"
+					]
+				},
+				"1": {
+					"spells": [
+						"{@spell comprehend languages}",
+						"{@spell identify}",
+						"{@spell unseen servant}"
+					],
+					"slots": 3
+				}
+			},
+			"ability": "int",
+			"type": "spellcasting"
+		}
+	],
+	"resist": [
+		"cold",
+		"poison"
+	],
+	"fluff": {
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://i.imgur.com/dFHKtnP.jpeg"
+				}
+			}
+		]
+	},
+	"tokenUrl": "https://i.imgur.com/UQY6exo.png",
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"senseTags": [
+		"D"
+	],
+	"trait": [
+		{
+			"name": "Dwarven Resilience",
+			"entries": [
+				"The dwarf has advantage on saving throws against poison."
+			]
+		}
+	],
+	"miscTags": [
+		"MW"
+	]
+}
