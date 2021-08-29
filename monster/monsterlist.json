@@ -137,6 +137,125 @@
          "miscTags":[
             "MW"
          ]
-      }
+      },
+	  {
+	"name": "Gnoll Berserker",
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"gnoll"
+		]
+	},
+	"source": "LumsenLuosWorld",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 15,
+			"from": [
+				"Bone Hide"
+			]
+		}
+	],
+	"hp": {
+		"formula": "10d8 + 20",
+		"average": 65
+	},
+	"speed": {
+		"walk": 40
+	},
+	"str": 17,
+	"dex": 14,
+	"con": 15,
+	"int": 8,
+	"wis": 11,
+	"cha": 9,
+	"passive": 10,
+	"cr": "3",
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"senseTags": [
+		"D"
+	],
+	"languages": [
+		"Gnoll"
+	],
+	"languageTags": [
+		"OTH"
+	],
+	"save": {
+		"str": "+5",
+		"con": "+4"
+	},
+	"bonus": [
+		{
+			"name": "Rage (Recharges after a Short or Long Rest).",
+			"entries": [
+				"As a bonus action, the gnoll can enter a rage at the start of its turn. The rage lasts for 1 minute or until the gnoll is {@condition incapacitated}. While raging, the gnoll gains the following benefits:",
+				"- The gnoll has advantage on Strength checks and Strength saving throws.",
+				"- When it makes a melee weapon attack, the gnoll gains a +2 bonus to the damage roll.",
+				"- The gnoll has resistance to bludgeoning, piercing, and slashing damage.",
+				"- The gnoll gains an additional action on each of its turns. That action can be used only to make one weapon attack or move up to its speed towards a hostile target it can see."
+			]
+		}
+	],
+	"trait": [
+		{
+			"name": "Rampage",
+			"entries": [
+				"When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+			]
+		}
+	],
+	"traitTags": [
+		"Rampage"
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The gnoll makes three attacks: one with its bite and two with its boneclaws."
+			]
+		},
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d4 + 6}) piercing damage."
+			]
+		},
+		{
+			"name": "Bite (raging)",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d4 + 8}) piercing damage."
+			]
+		},
+		{
+			"name": "Boneclaws",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage."
+			]
+		},
+		{
+			"name": "Boneclaws (raging)",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) slashing damage."
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"damageTags": [
+		"P",
+		"S"
+	],
+	"miscTags": [
+		"MW"
+	]
+}
    ]
 }
