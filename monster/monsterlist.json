@@ -1,261 +1,393 @@
 {
-   "monster":[
+   "monster": [
       {
-         "name":"Xavash",
-         "size":"M",
-         "type":"humanoid",
-         "source":"LLW",
-         "alignment":[
+         "name": "Xavash",
+         "size": "M",
+         "type": "humanoid",
+         "source": "LLW",
+         "alignment": [
             "C",
             "E"
          ],
-         "ac":[
+         "ac": [
             14
          ],
-         "hp":{
-            "formula":"7d8 + 90",
-            "average":121
+         "hp": {
+            "formula": "7d8 + 90",
+            "average": 121
          },
-         "speed":{
-            "walk":25
+         "speed": {
+            "walk": 25
          },
-         "str":10,
-         "dex":15,
-         "con":10,
-         "int":19,
-         "wis":13,
-         "cha":10,
-         "passive":11,
-         "cr":"4",
-         "shortName":true,
-         "skill":{
-            "arcana":"+6",
-            "history":"+6"
+         "str": 10,
+         "dex": 15,
+         "con": 10,
+         "int": 19,
+         "wis": 13,
+         "cha": 10,
+         "passive": 11,
+         "cr": "4",
+         "shortName": true,
+         "skill": {
+            "arcana": "+6",
+            "history": "+6"
          },
-         "languages":[
+         "languages": [
             "Common",
             "Dwarvish",
             "tir'su"
          ],
-         "languageTags":[
+         "languageTags": [
             "C",
             "D"
          ],
-         "action":[
+         "action": [
             {
-               "name":"Ild Rapier",
-               "entries":[
+               "name": "Ild Rapier",
+               "entries": [
                   "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) fire damage."
                ]
             },
             {
-               "name":"Combustion {@recharge 3}",
-               "entries":[
+               "name": "Combustion {@recharge 3}",
+               "entries": [
                   "The rune scribe marks the",
                   "Ild Rune with ash on a creature within 5 feet of its",
                   "posion. The creature immediately takes 13 ({@damage 2d10+2}) fire damage."
                ]
             },
             {
-               "name":"Ignite",
-               "entries":[
+               "name": "Ignite",
+               "entries": [
                   "The rune scribe marks the Ild Rune with ash on a",
                   "flammable object. That object immediately bursts into",
                   "flames."
                ]
             },
             {
-               "name":"Fire Tamer",
-               "entries":[
+               "name": "Fire Tamer",
+               "entries": [
                   "The rune scribe traces the Ild Rune with its",
                   "hand over an open flame. The rune scribe can",
                   "manipulate the flame as per the control flames spell."
                ]
             }
          ],
-         "damageTags":[
+         "damageTags": [
             "F"
          ],
-         "spellcasting":[
+         "spellcasting": [
             {
-               "name":"Spellcasting",
-               "headerEntries":[
+               "name": "Spellcasting",
+               "headerEntries": [
                   "The rune scribe is a 2nd-level spellcaster.",
                   "Its spellcasng ability is Intelligence. It can cast the",
                   "following spells."
                ],
-               "spells":{
-                  "0":{
-                     "spells":[
+               "spells": {
+                  "0": {
+                     "spells": [
                         "{@spell control flames|XGE}",
                         "{@spell mending}"
                      ]
                   },
-                  "1":{
-                     "spells":[
+                  "1": {
+                     "spells": [
                         "{@spell comprehend languages}",
                         "{@spell identify}",
                         "{@spell unseen servant}"
                      ],
-                     "slots":3
+                     "slots": 3
                   }
                },
-               "ability":"int",
-               "type":"spellcasting"
+               "ability": "int",
+               "type": "spellcasting"
             }
          ],
-         "resist":[
+         "resist": [
             "cold",
             "poison"
          ],
-         "fluff":{
-            "images":[
+         "fluff": {
+            "images": [
                {
-                  "type":"image",
-                  "href":{
-                     "type":"external",
-                     "url":"https://i.imgur.com/dFHKtnP.jpeg"
+                  "type": "image",
+                  "href": {
+                     "type": "external",
+                     "url": "https://i.imgur.com/dFHKtnP.jpeg"
                   }
                }
             ]
          },
-         "tokenUrl":"https://i.imgur.com/UQY6exo.png",
-         "senses":[
+         "tokenUrl": "https://i.imgur.com/UQY6exo.png",
+         "senses": [
             "darkvision 60 ft."
          ],
-         "senseTags":[
+         "senseTags": [
             "D"
          ],
-         "trait":[
+         "trait": [
             {
-               "name":"Dwarven Resilience",
-               "entries":[
+               "name": "Dwarven Resilience",
+               "entries": [
                   "The dwarf has advantage on saving throws against poison."
                ]
             }
          ],
-         "miscTags":[
+         "miscTags": [
             "MW"
          ]
       },
-	  {
-	"name": "Gnoll Berserker",
-	"size": "M",
-	"type": {
-		"type": "humanoid",
-		"tags": [
-			"gnoll"
-		]
-	},
-	"source": "LumsenLuosWorld",
-	"alignment": [
-		"C",
-		"E"
-	],
-	"ac": [
-		{
-			"ac": 15,
-			"from": [
-				"Bone Hide"
-			]
-		}
-	],
-	"hp": {
-		"formula": "10d8 + 20",
-		"average": 65
-	},
-	"speed": {
-		"walk": 40
-	},
-	"str": 17,
-	"dex": 14,
-	"con": 15,
-	"int": 8,
-	"wis": 11,
-	"cha": 9,
-	"passive": 10,
-	"cr": "3",
-	"senses": [
-		"darkvision 60 ft."
-	],
-	"senseTags": [
-		"D"
-	],
-	"languages": [
-		"Gnoll"
-	],
-	"languageTags": [
-		"OTH"
-	],
-	"save": {
-		"str": "+5",
-		"con": "+4"
-	},
-	"bonus": [
-		{
-			"name": "Rage (Recharges after a Short or Long Rest).",
-			"entries": [
-				"As a bonus action, the gnoll can enter a rage at the start of its turn. The rage lasts for 1 minute or until the gnoll is {@condition incapacitated}. While raging, the gnoll gains the following benefits:",
-				"- The gnoll has advantage on Strength checks and Strength saving throws.",
-				"- When it makes a melee weapon attack, the gnoll gains a +2 bonus to the damage roll.",
-				"- The gnoll has resistance to bludgeoning, piercing, and slashing damage.",
-				"- The gnoll gains an additional action on each of its turns. That action can be used only to make one weapon attack or move up to its speed towards a hostile target it can see."
-			]
-		}
-	],
-	"trait": [
-		{
-			"name": "Rampage",
-			"entries": [
-				"When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
-			]
-		}
-	],
-	"traitTags": [
-		"Rampage"
-	],
-	"action": [
-		{
-			"name": "Multiattack",
-			"entries": [
-				"The gnoll makes three attacks: one with its bite and two with its boneclaws."
-			]
-		},
-		{
-			"name": "Bite",
-			"entries": [
-				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d4 + 6}) piercing damage."
-			]
-		},
-		{
-			"name": "Bite (raging)",
-			"entries": [
-				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d4 + 8}) piercing damage."
-			]
-		},
-		{
-			"name": "Boneclaws",
-			"entries": [
-				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage."
-			]
-		},
-		{
-			"name": "Boneclaws (raging)",
-			"entries": [
-				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) slashing damage."
-			]
-		}
-	],
-	"actionTags": [
-		"Multiattack"
-	],
-	"damageTags": [
-		"P",
-		"S"
-	],
-	"miscTags": [
-		"MW"
-	]
-}
+      {
+         "name": "Gnoll Berserker",
+         "size": "M",
+         "type": {
+            "type": "humanoid",
+            "tags": [
+               "gnoll"
+            ]
+         },
+         "source": "LumsenLuosWorld",
+         "alignment": [
+            "C",
+            "E"
+         ],
+         "ac": [
+            {
+               "ac": 15,
+               "from": [
+                  "Bone Hide"
+               ]
+            }
+         ],
+         "hp": {
+            "formula": "10d8 + 20",
+            "average": 65
+         },
+         "speed": {
+            "walk": 40
+         },
+         "str": 17,
+         "dex": 14,
+         "con": 15,
+         "int": 8,
+         "wis": 11,
+         "cha": 9,
+         "passive": 10,
+         "cr": "3",
+         "senses": [
+            "darkvision 60 ft."
+         ],
+         "senseTags": [
+            "D"
+         ],
+         "languages": [
+            "Gnoll"
+         ],
+         "languageTags": [
+            "OTH"
+         ],
+         "save": {
+            "str": "+5",
+            "con": "+4"
+         },
+         "bonus": [
+            {
+               "name": "Rage (Recharges after a Short or Long Rest).",
+               "entries": [
+                  "As a bonus action, the gnoll can enter a rage at the start of its turn. The rage lasts for 1 minute or until the gnoll is {@condition incapacitated}. While raging, the gnoll gains the following benefits:",
+                  "- The gnoll has advantage on Strength checks and Strength saving throws.",
+                  "- When it makes a melee weapon attack, the gnoll gains a +2 bonus to the damage roll.",
+                  "- The gnoll has resistance to bludgeoning, piercing, and slashing damage.",
+                  "- The gnoll gains an additional action on each of its turns. That action can be used only to make one weapon attack or move up to its speed towards a hostile target it can see."
+               ]
+            }
+         ],
+         "trait": [
+            {
+               "name": "Rampage",
+               "entries": [
+                  "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+               ]
+            }
+         ],
+         "traitTags": [
+            "Rampage"
+         ],
+         "action": [
+            {
+               "name": "Multiattack",
+               "entries": [
+                  "The gnoll makes three attacks: one with its bite and two with its boneclaws."
+               ]
+            },
+            {
+               "name": "Bite",
+               "entries": [
+                  "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d4 + 6}) piercing damage."
+               ]
+            },
+            {
+               "name": "Bite (raging)",
+               "entries": [
+                  "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d4 + 8}) piercing damage."
+               ]
+            },
+            {
+               "name": "Boneclaws",
+               "entries": [
+                  "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage."
+               ]
+            },
+            {
+               "name": "Boneclaws (raging)",
+               "entries": [
+                  "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) slashing damage."
+               ]
+            }
+         ],
+         "actionTags": [
+            "Multiattack"
+         ],
+         "damageTags": [
+            "P",
+            "S"
+         ],
+         "miscTags": [
+            "MW"
+         ]
+      }
+{
+         "name": "Arcadian Avenger",
+         "size": "M",
+         "type": "celestial",
+         "source": "LLW",
+         "alignment": [
+            "L",
+            "G"
+         ],
+         "ac": [
+            {
+               "ac": 16,
+               "from": [
+                  "natural armor"
+               ]
+            }
+         ],
+         "hp": {
+            "formula": "8d8 + 24",
+            "average": 60
+         },
+         "speed": {
+            "walk": 30,
+            "fly": 40,
+            "canHover": false
+         },
+         "str": 18,
+         "dex": 15,
+         "con": 16,
+         "int": 10,
+         "wis": 12,
+         "cha": 12,
+         "passive": 13,
+         "cr": "3",
+         "senses": [
+            "darkvision 60 ft."
+         ],
+         "senseTags": [
+            "D"
+         ],
+         "languages": [
+            "Celestial",
+            "Common"
+         ],
+         "languageTags": [
+            "CE",
+            "C"
+         ],
+         "skill": {
+            "perception": "+3",
+            "insight": "+5"
+         },
+         "resist": [
+            {
+               "resist": [
+                  "bludgeoning",
+                  "piercing",
+                  "radiant"
+               ]
+            },
+            {
+               "resist": [
+                  "slashing"
+               ],
+               "note": "from nonmagical weapons"
+            }
+         ],
+         "immune": [
+            "poison"
+         ],
+         "conditionImmune": [
+            "poisoned"
+         ],
+         "trait": [
+            {
+               "name": "Elude Chance (3/Day).",
+               "entries": [
+                  "When the Arcadian avenger fails a saving throw or misses on an attack roll, it can choose to reroll the save or attack."
+               ]
+            },
+            {
+               "name": "Vengeance.",
+               "entries": [
+                  "Any time the Arcadian avenger sees an ally fall, she rolls her weapons’ damage dice twice and chooses the higher result for one minute"
+               ]
+            },
+            {
+               "name": "Magic Weapons.",
+               "entries": [
+                  "The avenger’s melee attacks are magical."
+               ]
+            },
+            {
+               "name": "Perfect Symmetry.",
+               "entries": [
+                  "When the avenger cooperates with other Arcadian avengers, she is immune to the {@condition frightened} and {@condition charmed} conditions. All allied Arcadian avengers roll a single Initiative check with advantage, acting on the same initiative. The Arcadian avengers can move or take their actions in any order, even before another avenger has completed her turn. For example, two avengers can move, before either of them makes an attack."
+               ]
+            }
+         ],
+         "action": [
+            {
+               "name": "Multiattack.",
+               "entries": [
+                  "The Arcadian avenger makes two attacks with her longswords."
+               ]
+            },
+            {
+               "name": "Longswords.",
+               "entries": [
+                  "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) slashing damage."
+               ]
+            }
+         ],
+         "damageTags": [
+            "S"
+         ],
+         "miscTags": [
+            "MW"
+         ],
+         "tokenUrl": "https://i.imgur.com/SjNvc0K.png",
+         "fluff": {
+            "entries": [
+               "The warriors of the grand legions of Arcadia are images of perfect symmetry, resembling humanoid females with skin, hair, and wings shining like polished metal. The armor plates covering their bodies may appear like a suit of plate armor, but are in fact part of the avengers’ metallic skins. While two avengers may not look perfectly identical, their features are always very similar in appearance.",
+               "Lawkeepers. Arcadian avengers are shining paragons of justice, born of the pure forces of law suffusing the lawful good plane of Arcadia. Though they are benevolent creatures who exist to uphold rules and laws above anything else and will not hesitate to come into conflict with anyone, even a good creature, who violates the law",
+               "Arcadian avengers are the protectors of their home plane and keepers of the peace and harmony, who will not stop at waging war, if it is in the interest of preventing an even larger disturbance of the peace",
+               "The Ideal of Order. Despite their humanoid appearance, the thought processes of Arcadian avengers are just as alien to mortal creatures as those of demons or devils. An avenger understands all events as a series of applied rules unfolding. This frees them of any concept of doubt, or remorse, since anything they do is laid out in just laws they will not question. When an Arcadian avenger sees any need for action she will spring to it without hesitation, enforcing the rules she lives by and seeing any sacrifice as a necessity, never a tragedy.",
+               "A group of Arcadian avengers works together and coordinates in flawless synchronicity. They advance as a unit in perfect formation that responds to unforeseen circumstances immediately and without fail.",
+               "Swift Punishment. An Arcadian avenger is quick to bring those to justice who would violate the law, disturb the peace and harmony of Arcadia, or obstruct her in her duty. Seeing a fellow legionnaire of Arcadia fall will only inspire the avenger to even more fervor, exacting her vengeance with deadly strikes of her twin swords.",
+               "Arcadian avengers will even be sent to the Material Plane to exact punishment if a mortal creature commits especially egregious crimes that catch the attention of Arcadian judges."
+            ]
+         }
+      }
    ]
 }
